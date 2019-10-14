@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(90, 170, 170);
+    text-align: center;
+    font-family: Cambria;
+}
+h1{ 
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#instruction1{
+    color:rgb(214, 212, 212);
+}
+
+#instruction2{
+    color: rgb(65, 65, 65);
+}
+
+#instruction3{
+    color:black;
+}
+
+/* Styles for the input element used to add a new To-Do */
+
+input{
+    min-width: 65%; /*This element's width must be at least 65% of the width of the container */
+}
+
+#submit{
+    background: white;
+    border: none;
+    transition-delay: 0s;
+    transition-duration: 5s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition: background-color 1.5s ease 1s;
+}
+
+#submit:hover{
+    background-color: rgb(65, 65, 65);
+
+}
+
+ul {
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(90, 170, 170);
+    font-weight: bold;
+
+    transition: all 0.75s ease;
+    /* Webkit, for Safari and Opera */
+    -webkit-transition: all 0.75s ease;
+    /* Mozilla, for Firefox */
+    -moz-transition: all 0.75s ease;
+    /* Opera */
+    -o-transition: all 0.75s ease;
+}
+
+li:hover {
+    background-color: #3d898b;
+}
+
+/* Styles for when a list item is marked done */
+
+.done {
+    background-color: rgb(1, 94, 94) !important;
+}
+
+/* Styles for when a list item is deleted */
+
+.delete {
+    display: none;
+}
+
+/* Styles for the delete button inside the list items */
+
+/* Target any buttons whose parent element is a list item */
+li > button {
+    float: right;
+    border: none;
+    background: none;
+    color: white;
+}
